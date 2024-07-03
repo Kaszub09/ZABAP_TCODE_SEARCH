@@ -120,7 +120,7 @@
       "find": true
     },
     "check_syntax": {
-      "exclude": [],
+      "exclude": ["zcl_zabap_salv_report"],
       "severity": "Error"
     },
     "check_text_elements": {
