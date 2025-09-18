@@ -19,10 +19,16 @@ START-OF-SELECTION.
   report->set_grid( |RESULT_CONTAINER| ).
   SET SCREEN 1.
 
+MODULE status_0001 OUTPUT.
+  SET PF-STATUS 'MAIN'.
+ENDMODULE.
+
 MODULE user_command_0001 INPUT.
   CASE sy-ucomm.
     WHEN 'SEARCH'.
       report->prepare_report( query = search_text custom_only = custom_only pattern_only = match_pattern match_threshold = CONV #( threshold ) ).
       report->display_data( ).
+    WHEN 'BACK'.
+      LEAVE TO SCREEN 0.
   ENDCASE.
 ENDMODULE.
