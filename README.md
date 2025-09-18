@@ -5,4 +5,4 @@ Search for tcode - using exact pattern or by trying to find best match with Leve
 
 
 ## Instalation 
-Via abapgit https://github.com/abapGit/abapGit. Requires https://github.com/Kaszub09/ZABAP_SALV_REPORT.
+Via abapgit https://github.com/abapGit/abapGit. Requires https://github.com/Kaszub09/abapEasyALV .
